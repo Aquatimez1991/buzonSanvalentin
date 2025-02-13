@@ -1,39 +1,46 @@
+/* Contenedor general */
+.contenedor {
+    position: absolute;
+    top: 0; /* Se mantiene en la parte superior */
+    width: 100%;
+    text-align: center; /* Centra el título */
+    padding: 20px 0; /* Espacio arriba y abajo */
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para mejorar la visibilidad */
+}
 
+/* Título */
+.titulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #ff4d6d;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+/* Fondo del body */
 body {
-    background-size: contain; /* Ajusta la imagen completa sin recortar */
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center 60%; /* Baja la imagen ajustando el valor vertical */
+    background-position: center top; /* Imagen comienza desde la parte superior */
     background-attachment: fixed;
     background-color: #d15e79;
-    height: 100vh;
-    margin: 300;
+    height: 100vh; /* Ajuste de altura */
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start; /* Asegura que el contenido comienza desde arriba */
+    padding-top: 100px; /* Espacio para que el título no se superponga */
 }
 
-/* Ajustes específicos para dispositivos móviles */
-@media (max-width: 599px) {
-    body {
-        background-size: contain;
-        background-position: center 80%; /* Baja aún más la imagen en móviles */
-        background-attachment: scroll;
-    }
-}
-
-
-.titulo {
-    font-family: 'Dancing Script', cursive; /* Fuente romántica */
-    font-size: 3rem; /* Tamaño grande */
-    color: #ff4d6d; /* Rosa vibrante */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
-    text-align: center; /* Centrado */
-    margin-top: 20px; /* Espaciado superior */
-}
-
-/* Ajuste para pantallas móviles */
+/* Ajuste para móviles */
 @media (max-width: 599px) {
     .titulo {
-        font-size: 2.5rem; /* Tamaño un poco menor en móviles */
+        font-size: 2.5rem;
+    }
+    body {
+        background-size: contain;
+        background-position: center top;
+        padding-top: 80px;
     }
 }
