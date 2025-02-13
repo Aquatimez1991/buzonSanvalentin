@@ -1,11 +1,23 @@
+/* Fondo del body */
+body {
+    background-image: url('fondoBuzon.png');
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    background-color: #d15e79; /* Color de fondo */
+    height: 100vh; /* Ajuste de altura */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Asegura que el contenido comienza desde arriba */
+    padding-top: 100px; /* Espacio para que el título no se superponga */
+}
+
 /* Contenedor general */
 .contenedor {
-    position: absolute;
-    top: 0; /* Se mantiene en la parte superior */
-    width: 100%;
-    text-align: center; /* Centra el título */
-    padding: 20px 0; /* Espacio arriba y abajo */
-    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para mejorar la visibilidad */
+    text-align: center; /* Centra el contenido */
 }
 
 /* Título */
@@ -17,20 +29,12 @@
     margin: 0;
 }
 
-/* Fondo del body */
-body {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top; /* Imagen comienza desde la parte superior */
-    background-attachment: fixed;
-    background-color: #d15e79;
-    height: 100vh; /* Ajuste de altura */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Asegura que el contenido comienza desde arriba */
-    padding-top: 100px; /* Espacio para que el título no se superponga */
+/* Estilo para la imagen del Chocobo */
+.chocobo-img {
+    max-width: 100%; /* Ajusta la imagen para que no exceda el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: 20px auto; /* Centra la imagen horizontalmente con margen arriba y abajo */
 }
 
 /* Ajuste para móviles */
@@ -39,8 +43,6 @@ body {
         font-size: 2.5rem;
     }
     body {
-        background-size: contain;
-        background-position: center top;
         padding-top: 80px;
     }
 }
