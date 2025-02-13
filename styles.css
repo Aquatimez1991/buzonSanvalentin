@@ -1,0 +1,39 @@
+
+body {
+    background-size: contain; /* Ajusta la imagen completa sin recortar */
+    background-repeat: no-repeat;
+    background-position: center 60%; /* Baja la imagen ajustando el valor vertical */
+    background-attachment: fixed;
+    background-color: #d15e79;
+    height: 100vh;
+    margin: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajustes específicos para dispositivos móviles */
+@media (max-width: 599px) {
+    body {
+        background-size: contain;
+        background-position: center 80%; /* Baja aún más la imagen en móviles */
+        background-attachment: scroll;
+    }
+}
+
+
+.titulo {
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
+    font-size: 3rem; /* Tamaño grande */
+    color: #ff4d6d; /* Rosa vibrante */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+    text-align: center; /* Centrado */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Ajuste para pantallas móviles */
+@media (max-width: 599px) {
+    .titulo {
+        font-size: 2.5rem; /* Tamaño un poco menor en móviles */
+    }
+}
