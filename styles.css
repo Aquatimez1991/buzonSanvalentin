@@ -1,6 +1,6 @@
-/* Fondo del body */
-body {
-    background-image: url('fondoBuzon.png');
+/* Fondo del body solo para index.html */
+.san-valentin-bg {
+    background-image: url('assets/fondoBuzon.png'); /* Imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen horizontal y verticalmente */
@@ -22,10 +22,10 @@ body {
 
 /* Título */
 .titulo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    color: #ff4d6d;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva */
+    font-size: 3rem; /* Tamaño de fuente */
+    color: #ff4d6d; /* Color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra del texto */
     margin: 0;
 }
 
@@ -37,12 +37,134 @@ body {
     margin: 20px auto; /* Centra la imagen horizontalmente con margen arriba y abajo */
 }
 
+/* Estilo para el párrafo */
+.parrafo {
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva */
+    color: #ff66b2; /* Color del texto */
+    font-size: 1.5em; /* Tamaño de fuente */
+    text-align: center; /* Centra el texto */
+    margin-top: 20px;
+    background-color: #ffe6f0; /* Color de fondo del párrafo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilo para el botón */
+.boton-valentin {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff3366;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.boton-moogle:hover {
+    background-color: #ff6699; /* Color de fondo al pasar el ratón por encima */
+}
+
 /* Ajuste para móviles */
 @media (max-width: 599px) {
     .titulo {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Tamaño de fuente reducido para pantallas pequeñas */
     }
     body {
         padding-top: 80px;
     }
+}
+
+/* Otros estilos específicos */
+.blue-background {
+    background-color: #ffe6f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinear los elementos hacia la parte superior */
+    height: 100vh;
+    text-align: center;
+    padding-top: 20px; /* Añadir un pequeño padding superior si es necesario */
+}
+
+.titulo2 {
+    font-family: 'Cursive', 'Times New Roman', serif; /* Fuente cursiva y elegante */
+    font-size: 3em; /* Tamaño de fuente */
+    color: #ff69b4; /* Color rosado */
+    text-shadow: 2px 2px 4px #ff1493; /* Sombra rosada */
+    margin-bottom: 20px; /* Reducir margen inferior para acercarlo más a la parte superior */
+}
+
+.img-control {
+    width: 100px; /* Ajustar el tamaño de las imágenes */
+    margin: 10px;
+}
+
+.libro {
+    width: 200px; /* Ajustar el tamaño de la imagen del libro */
+    margin-top: 10px; /* Añadir más margen superior para separarlo de las otras imágenes */
+}
+
+.texto-mensaje {
+    margin-top: 20px; /* Añadir margen superior para separar del grupo de imágenes */
+    font-size: 1.5em;
+    color: #c71585; /* Color rosa oscuro para un toque romántico */
+    display: none; /* Ocultar inicialmente */
+    font-family: 'Cursive', 'Times New Roman', serif; /* Fuente cursiva y elegante */
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilo para los corazones */
+.corazon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50% 50% 0 0;
+    transform: rotate(-45deg);
+}
+
+.corazon::before, .corazon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+}
+
+.corazon::before {
+    top: -15px;
+    left: 0;
+}
+
+.corazon::after {
+    left: 15px;
+    top: 0;
+}
+
+/* Estilo del mensaje final */
+.texto-final {
+    font-family: 'Times New Roman', serif;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 20px;
+}
+
+/* Estilo para la imagen voladora */
+#flyingImg {
+    position: relative;
+    z-index: 1; /* Asegura que la imagen esté por encima de los corazones */
 }
