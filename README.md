@@ -47,8 +47,8 @@
 Este proyecto está licenciado bajo la MIT License.
 
 ## 📝 Créditos
-- **Desarrollo**: [Tu Nombre]
-- **Imágenes**: [Fuentes de las imágenes, si es necesario]
+- **Desarrollo**: [Elias Jeshua Salgado Coripuna]
+- **Imágenes**: Las imágenes utilizadas en este proyecto no son de mi autoría y han sido obtenidas de diversas fuentes en internet.
 - **Inspiración**: Proyecto creado con amor para el Día de San Valentín.
 
 ¡Espero que disfrutes este proyecto tanto como yo disfruté creándolo! 💖🪄
