@@ -19,6 +19,24 @@
         <div id="mensaje" class="texto-mensaje"></div> <!-- Contenedor para los textos -->
         <img id="libro" src="assets/libro.gif" alt="Libro" class="libro">
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const musica = document.getElementById("musica");
+
+            // Reproducir música desde la posición guardada si existe
+            const tiempoGuardado = localStorage.getItem("tiempoMusica");
+            if (tiempoGuardado !== null) {
+                musica.currentTime = parseFloat(tiempoGuardado);
+            }
+            musica.play();
+
+            // Guardar la posición de la música cada segundo
+            setInterval(() => {
+                localStorage.setItem("tiempoMusica", musica.currentTime);
+            }, 1000);
+        });
+    </script>
+    <audio id="musica" src="assets/ThePrelude.mp3" loop></audio>
     <script src="app2.js"></script> <!-- Referencia al archivo JavaScript -->
 </body>
 </html>

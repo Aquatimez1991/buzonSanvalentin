@@ -7,14 +7,32 @@
     <link rel="stylesheet" href="styles.css"> <!-- Referencia al archivo CSS externo -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <body class="san-valentin-bg">
-        <div class="contenedor">
+<body class="san-valentin-bg">
+    <div class="contenedor">
         <h1 class="titulo">💖 Buzón de San Valentín 💖</h1>
         <img src="assets/ChocoboImgur.gif" alt="Chocobo Gif" id="chocoboImg" class="chocobo-img" />
         <p class="parrafo">Descubre mis deseos Aquí</p>
-        <button id="botonValentin" class="boton-valentin">Enviar con Moogle 💌🪄 </button>
+        <button id="botonValentin" class="boton-valentin">Enviar con Moogle 💌🪄</button>
+        <!-- Elemento de audio con autoplay y loop -->
+        <audio id="musica" src="assets/ThePrelude.mp3" loop></audio>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const musica = document.getElementById("musica");
+
+            // Reproducir música desde la posición guardada si existe
+            const tiempoGuardado = localStorage.getItem("tiempoMusica");
+            if (tiempoGuardado !== null) {
+                musica.currentTime = parseFloat(tiempoGuardado);
+            }
+            musica.play();
+
+            // Guardar la posición de la música cada segundo
+            setInterval(() => {
+                localStorage.setItem("tiempoMusica", musica.currentTime);
+            }, 1000);
+        });
+    </script>
     <script src="app.js"></script> <!-- Referencia al archivo JS externo -->
 </body>
 </html>
