@@ -4,13 +4,14 @@
 
 ## 📝 Descripción
 
-**Buzón de San Valentín** te permite disfrutar de animaciones y mensajes personalizados al hacer clic en imágenes especiales. ¡Descubre los mensajes y celebra el amor con este divertido proyecto! 💖
+**Buzón de San Valentín** te permite disfrutar de animaciones, mensajes personalizados y música de fondo para una experiencia mágica. ¡Descubre los mensajes y celebra el amor con este divertido proyecto! 💖
 
 ## 🔑 Funcionalidades
 
 - **Animaciones de Chocobo**: Un Chocobo animado que se desplaza por la pantalla. 🐤
 - **Mensajes Personalizados**: Mensajes únicos al hacer clic en las imágenes de las llaves. 📜
 - **Interfaz Atractiva**: Uso de imágenes y estilos CSS para una experiencia visual agradable. 🎨
+- **Música de Fondo**: Incluye la pista "The Prelude" de Final Fantasy VII Remake que se reproduce automáticamente al cargar la página. 🎵
 
 ## 📂 Estructura del Proyecto
 ```plaintext
@@ -29,7 +30,8 @@
     ├── 📄 Key5.gif
     ├── 📄 fondoBuzon.png
     ├── 📄 libro.gif
-    └── 📄 Flying.gif
+    ├── 📄 Flying.gif
+    └── 📄 ThePrelude.mp3
 ```
 
 ## 🚀 Instalación
@@ -55,6 +57,7 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 
 - **Colores y Estilos**: Puedes cambiar los colores del tema y otros estilos modificando `styles.css`. 🎨
 - **Imágenes**: Puedes reemplazar las imágenes en la carpeta `assets` con las tuyas propias. 🖼️
+- **Música**: Puedes reemplazar la pista de música `ThePrelude.mp3` en la carpeta `assets` con otra de tu elección. 🎶
 
 ## 🤝 Contribuciones
 
@@ -69,9 +72,10 @@ Este proyecto está licenciado bajo la MIT License.
 **Elias Jeshua Salgado Coripuna**  
 [GitHub](https://github.com/usuario) | [LinkedIn](https://www.linkedin.com/in/elias-salgado-398443193)
 
-## 📸 Imágenes
+## 📸 Imágenes y Música
 
-Las imágenes utilizadas en este proyecto no son de mi autoría y han sido obtenidas de diversas fuentes en internet.
+- **Imágenes**: Las imágenes utilizadas en este proyecto no son de mi autoría y han sido obtenidas de diversas fuentes en internet.
+- **Música**: La pista "The Prelude" de Final Fantasy VII Remake ha sido utilizada en este proyecto. **Nota:** Esta música está protegida por derechos de autor y su uso en este proyecto es solo con fines educativos y demostrativos.
 
 ---
 
